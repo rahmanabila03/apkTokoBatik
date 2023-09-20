@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".input_data_TokoBatik">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="415dp"
+        android:layout_height="235dp"
+        android:layout_marginBottom="77dp"
+        android:background="@drawable/bg3"
+        app:layout_constraintBottom_toTopOf="@+id/txt_kodeBarang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="63dp"
+            android:text="Toko BatikKU"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="113dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/hat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnSimpanData"
+        android:layout_width="147dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/ijotua"
+        android:text="simpan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_kodeBarang"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/bg2"
+        android:ems="10"
+        android:hint=" kode barang"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_namaBarang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_kuantiti"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/bg2"
+        android:ems="10"
+        android:hint=" kuantiti"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSimpanData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_namaBarang"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/bg2"
+        android:ems="10"
+        android:hint=" nama barang"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_hargaBarang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_hargaBarang"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/bg2"
+        android:ems="10"
+        android:hint=" harga barang"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_jenisBarang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_jenisBarang"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/bg2"
+        android:ems="10"
+        android:hint=" jenis barang"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_kuantiti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="49dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
